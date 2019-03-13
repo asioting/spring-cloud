@@ -1,2 +1,2 @@
-# depot-spring-cloud
+# spring-cloud
 Spring Cloud Sample Projects
