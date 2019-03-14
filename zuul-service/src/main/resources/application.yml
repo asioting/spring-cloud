@@ -1,0 +1,15 @@
+server:
+  port: 8880
+
+#eureka:
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+
+zuul:
+#  ignoredServices: '*'
+  routes:
+    message-service:
+      path: /message-service/**
+      serviceId: message-service
+      strip-prefix: false
