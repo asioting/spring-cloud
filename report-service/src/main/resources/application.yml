@@ -1,0 +1,7 @@
+server:
+  port: 8893
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
