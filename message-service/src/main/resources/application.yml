@@ -1,7 +1,16 @@
 server:
-  port: 8881
+  port: 8892
 
 eureka:
   client:
     healthcheck:
       enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#welcome:
+#  message: Hello World!
