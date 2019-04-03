@@ -9,7 +9,15 @@ server:
 zuul:
 #  ignoredServices: '*'
   routes:
+    user-service:
+      path: /user-service/**
+      serviceId: user-service
+      strip-prefix: false
     message-service:
       path: /message-service/**
       serviceId: message-service
+      strip-prefix: false
+    report-service:
+      path: /report-service/**
+      serviceId: report-service
       strip-prefix: false
