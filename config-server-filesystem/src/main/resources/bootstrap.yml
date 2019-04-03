@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///D:/work/config
+      #uri: http://localhost:8888
+  profiles:
+    active: native
